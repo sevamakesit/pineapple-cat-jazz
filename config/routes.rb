@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: "welcome#index" # GET / execute WelcomeController index action
   get '/about' => "welcome#about"
   get '/faq' => "welcome#faq"
